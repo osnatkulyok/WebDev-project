@@ -1,0 +1,22 @@
+body{
+    background-image: url("./images/background.jpg");
+}
+#navtitle{
+    margin-top: 3%;
+    margin-left: 3.2%;
+    font-family: Algerian;
+}
+ul{
+    list-style-type:circle;
+    font-family:Calibri;
+    margin-left: 2.5%
+}
+a{
+    text-decoration: none;
+
+}
+#secondtitile{
+    margin-left: 3.5%;
+    font-family: Algerian;
+    margin-top: 8%;
+}
