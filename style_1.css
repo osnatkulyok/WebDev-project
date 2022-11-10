@@ -1,0 +1,13 @@
+body{
+    background-image: url("./images/background.jpg");
+}
+table{
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-left: 4%;
+    width: 50%;
+    border-color: aqua;
+}
+#titles{
+    background-color: #afec53;
+}
