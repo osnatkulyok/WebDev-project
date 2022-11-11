@@ -134,36 +134,48 @@
 
 
                  <div class="box">
-                       <h2>Personal Details</h2>
-                       <label>Full name: <input type="text" id="name" name="name"></label>
-                       <label>Email: <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"></label>
-                       <label>Phone number: <input type="tel" id="phone" name="phone" placeholder="123-4567-890" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"></label>
-                       <label>Date of birth: <input type="date"  id="date" name="date"></label>
+                     <h3>Personal Details</h3>
+                     <div class="box_1">
+                         <label>Full name: <input type="text" class="border" id="in_name" name="name"></label>
+                         <label class="right">Phone number: <input type="tel" class="border" id="in_phone" name="phone" placeholder="123-4567-890" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"></label>
+                     </div>
+                     <div class="box_2">
+                         <label id="email">Email: <input type="email" class="border" id="in_email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"></label>
+                         <label class="right">Date of birth: <input type="date" class="border" id="in_date" name="date"></label>
+                     </div>
                  </div>
 
                  <div class="box-2">
-                       <h2>Your Feadback</h2>
-                       <h5>Rating:</h5>
-                       <input type="radio" id="1" name="rating"><br>
-                        <label for="1">1</label>
-                        <input type="radio" id="2" name="rating"><br>
-                        <label for="2">2</label>
-                        <input type="radio" id="3" name="rating"><br>
-                        <label for="3">3</label>
-                        <input type="radio" id="4" name="rating"><br>
-                        <label for="4">4</label>
-                        <input type="radio" id="5" name="rating"><br>
-                        <label for="5">5</label>
+                     <h3>Your Feadback</h3>
+                     <div>
+                         <h4>Rating: </h4>
+                         <div class="rating">
 
-                        <label for="message">Your message:</label>
-                        <input type="text" id="message" name="message">
+                            <label for="1"><input type="radio" id="1" name="rating"><br>1</label>
 
-                        <label for="multi_choice">How did you find this website?</label>
-                      <select id="multi_choice" name="choice">
-                            <option value="roaming the internet">roaming the internet</option>
-                            <option value="word of mouth">word of mouth</option>
-                            <option value="from ad">from ad</option>
-                      </select>
+                            <label for="2"><input type="radio" id="2" name="rating"><br>2</label>
+                            <input type="radio" id="3" name="rating">
+                            <label for="3">3</label>
+                            <input type="radio" id="4" name="rating">
+                            <label for="4">4</label>
+                            <input type="radio" id="5" name="rating">
+                            <label for="5">5</label>
+                         </div>
+                     </div>
+
+                     <div>
+                          <label for="message">Your message:</label>
+                          <textarea id="message" name="message"></textarea>
+                     </div>
+
+                      <div>
+                          <label for="multi_choice">How did you find this website?</label>
+                          <select id="multi_choice" name="choice">
+                                <option value="roaming the internet">roaming the internet</option>
+                                <option value="word of mouth">word of mouth</option>
+                                <option value="from ad">from ad</option>
+                          </select>
+                      </div>
                  </div>
 
 
