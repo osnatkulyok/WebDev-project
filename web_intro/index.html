@@ -81,18 +81,34 @@
 
         <div id="place">
             <h3 id="t_place">My Favorite Place</h3>
-            <p class="p_leon_place">
-                My favorite place to visit is an any natural place with water.
-                The special I would be able to recommend is called <a id="information"
-                target="_blank" href="https://maps.app.goo.gl/mrnmHLaAzQPguMEc9">"Hof Habonim"</a>.
-                It's a clean & quite place, where you can enjoy your time and relax.
 
-                In my opinion, Bonim Beach is a special place, since it is a private and clean beach.
-                There are rocky areas with big curves where you can sit there and watch the sea, stare,
-                dream or just let your thoughts run.
+            <p class="p_leon_place" id="hope">
+                My favorite place to visit is an any natural
+                place with water. The special I would be able
+                to recommend is called <a id="information" target="_blank" href="https://maps.app.goo.gl/mrnmHLaAzQPguMEc9">"Hof Habonim"</a>.
+                It's a clean & quite place, where you can enjoy
+                your time and relax.
+
+                In my opinion, Bonim Beach is a special place,
+                since it is a private and clean beach. There
+                are rocky areas with big curves where you can
+                sit there and watch the sea, stare, dream or
+                just let your thoughts run.
             </p>
             <img id="img_boat" src="./images/build.png"
                  alt="An abandoned ship in the middle of the sea"/>
+            <div class="scroll_block">
+                <img id="im" src="./images/build.png"
+                 alt="An abandoned ship in the middle of the sea"/>
+                <img id="im" src="./images/build.png"
+                 alt="An abandoned ship in the middle of the sea"/>
+                <img id="im" src="./images/build.png"
+                 alt="An abandoned ship in the middle of the sea"/>
+                <img id="i" src="./images/build.png"
+                 alt="An abandoned ship in the middle of the sea"/>
+
+            </div>
+
         </div>
 
         <div id="favorite_food">
@@ -124,16 +140,12 @@
                 </ol>
         </div>
 
-        <div id="feedbak_form">
+        <div class="feedbak_form">
             <form>
+                <h1 class="form">Feedback Form</h1>
+                <h3 class="form">I'd love to hear your honest toughts!</h3>
 
-                <div class="form">
-                    <h1>Feedback Form</h1>
-                    <h3>I'd love to hear your honest</h3>
-                </div>
-
-
-                 <div class="box">
+                <div class="box">
                      <h3>Personal Details</h3>
                      <div class="box_1">
                          <label>Full name: <input type="text" class="border" id="in_name" name="name"></label>
@@ -143,48 +155,47 @@
                          <label id="email">Email: <input type="email" class="border" id="in_email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"></label>
                          <label class="right">Date of birth: <input type="date" class="border" id="in_date" name="date"></label>
                      </div>
-                 </div>
+                </div>
 
                  <div class="box-2">
-                     <h3>Your Feadback</h3>
-                     <div>
-                         <h4>Rating: </h4>
-                         <div class="rating">
+                     <div id="div">
+                         <h3 class="box_title">Your Feadback</h3>
+                         <textarea id="message" class="border" name="message"></textarea>
+                         <label id="in_message" for="message">Your message:</label>
 
-                            <label for="1"><input type="radio" id="1" name="rating"><br>1</label>
+                         <h4 class="box_title">Rating:
+                             <input type="radio" id="1" name="rating">
+                             <input type="radio" id="2" name="rating">
+                             <input type="radio" id="3" name="rating">
+                             <input type="radio" id="4" name="rating">
+                             <input type="radio" id="5" name="rating">
+                             <br>
+                             <label for="1" class="num">&emsp;&ensp;&nbsp;1</label>
+                             <label for="2" class="num">2</label>
+                             <label for="3" class="num">3</label>
+                             <label for="4" class="num">4</label>
+                             <label for="5" class="num">5</label>
+                         </h4>
 
-                            <label for="2"><input type="radio" id="2" name="rating"><br>2</label>
-                            <input type="radio" id="3" name="rating">
-                            <label for="3">3</label>
-                            <input type="radio" id="4" name="rating">
-                            <label for="4">4</label>
-                            <input type="radio" id="5" name="rating">
-                            <label for="5">5</label>
-                         </div>
-                     </div>
-
-                     <div>
-                          <label for="message">Your message:</label>
-                          <textarea id="message" name="message"></textarea>
-                     </div>
-
-                      <div>
-                          <label for="multi_choice">How did you find this website?</label>
-                          <select id="multi_choice" name="choice">
+                     <div class="choice">
+                          <label for="multi_choice" class="box_title">How did you find this website?</label><br>
+                          <select id="multi_choice" class="border" name="choice">
                                 <option value="roaming the internet">roaming the internet</option>
                                 <option value="word of mouth">word of mouth</option>
                                 <option value="from ad">from ad</option>
                           </select>
-                      </div>
+                     </div>
                  </div>
+            </div>
 
 
-                <button type="submit" id="submit" formaction="#">
+                <button type="submit" class="submit border" id="submit" formaction="#">
                     submit
                 </button>
-                <button type="reset" id="reset" formaction="#">
+                <button type="reset" class="submit border" id="reset" formaction="#">
                     reset
                 </button>
+
             </form>
         </div>
     </div>
