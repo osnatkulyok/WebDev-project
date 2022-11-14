@@ -1,5 +1,6 @@
 *{
     font-family: 'Arial Nova';
+    /*margin: 0;*/
 }
 body{
     background-image: url("./images/background.jpg");
@@ -20,7 +21,7 @@ body{
     width: 100%;
     background-color: #479ff7;
     top: 0;
-    position: sticky;
+    margin: 0;
     background-position: 99%;
     background-repeat: no-repeat;
 
@@ -62,17 +63,19 @@ body{
     color: white;
   }
 
-  .navbar {
+.navbar {
     display: block;
     grid-area: title;
-    position: sticky;
     top: 0;
     margin: 0;
+    position: sticky;
     background-color: #6ce2cf;
     text-align: center;
     width: max-content;
   }
-
+/*.navbar a.external::after {*/
+/*  content: url(./images/vote.jfif);*/
+/*}*/
   .button {
     font-size: larger;
     display: block;
@@ -87,8 +90,9 @@ body{
     color: black;
     padding: 5px;
   }
-.fa{
-    font-size:24px;
+.external{
+    width: 17px;
+    height: 17px;
 }
   .navbar a:hover {
     background-color: #555;
@@ -99,44 +103,45 @@ body{
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
   }
-   .scrollpage {
+   .scroll-container {
     grid-area: sidebar;
-    text-align: center;
+    overflow-y: scroll;
+    text-align: left;
     flex-direction: column;
     margin-top: 10px;
-    justify-content: start;
+    /*justify-content: start;*/
     align-content: flex-start;
-  }
-  .scrollpage h1 {
-    height: 1.5em;
-    font-size: 200%;
-  }
-
-  .scrollpage h2 {
-    font-size: 150%;
-    height: 2em;
-  }
-  .scrollpage h3 {
-    font-size: 125%;
-    height: 2em;
-    font-family: "Arial Nova";
-  }
-  .scrollpage h4 {
-    font-family: "Arial Nova";
-    font-size: 100%;
-    height: 2em;
-  }
-  .navbar {
-    padding: 5px;
-  }
-  .scroll-container {
-    overflow-y: scroll;
-  }
-  .scrollpage {
     align-items: center;
     justify-content: center;
     height: 100%;
   }
+/*.scrollpage  {*/
+/*    overflow-y: scroll;*/
+/*  }*/
+  .scroll-container h1 {
+    height: 1.5em;
+    font-size: 200%;
+  }
+
+  .scroll-container h2 {
+    font-size: 150%;
+    height: 2em;
+  }
+  .scroll-container h3 {
+    font-size: 125%;
+    height: 2em;
+    font-family: "Arial Nova";
+  }
+  .scroll-container h4 {
+    font-family: "Arial Nova";
+    font-size: 100%;
+    height: 2em;
+  }
+  /*.scroll-container {*/
+  /*  align-items: center;*/
+  /*  justify-content: center;*/
+  /*  height: 100%;*/
+  /*}*/
 .footer {
     grid-area: footer;
     background-color: #479ff7;
@@ -195,12 +200,14 @@ ol{
     margin-left: 3.2%;
 }
 #secondtitile{
-    margin-top: 8%;
+    margin-top: 300px;
+    font-family: Algerian;
 }
 #movie{
     padding-top: 0px;
 }
 #img_leon{
+    margin-top: 20px;
     margin-left: 3.5%;
     padding: 0;
     filter: drop-shadow(5px 5px 5px #222);
@@ -219,10 +226,10 @@ ol{
     padding-top: 400px;
 }
 #t_place{
-    margin-left: 4.5%;
+    margin-left: 4%;
     margin-top: 2.5%;
     font-family: Algerian;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
 }
 /*#hope{*/
 /*    float: right;*/
@@ -236,16 +243,16 @@ ol{
     width: 310px;
     height: 300px;
     border-radius: 7px;
-    border: 5px solid black;
+    border: 5px solid #0eefef;
 }
 .scroll_block{
     overflow-y: scroll;
     max-width: 330px;
-    max-height: 650px;
+    max-height: 655px;
     margin-right: 200px;
     margin-left: 350px;
-    margin-top: 43px;
-
+    margin-top: 50px;
+    filter: drop-shadow(5px 5px 5px #222);
     border: 5px solid #4ef9da;
     background-color: #0eefef;
 }
@@ -303,7 +310,7 @@ ol{
 
 }
 .box{
-    height: 150px;
+    height: 160px;
     width: 55%;
     border: 5px solid #6ce2cf;
     padding-top: 7px;
@@ -344,7 +351,7 @@ ol{
     margin-top: 20px;
 }
 .box-2 {
-    max-height: 190px;
+    max-height: 200px;
     max-width: 55%;
     border: 5px solid #6ce2cf;
     padding-top: 7px;
@@ -383,7 +390,7 @@ ol{
 .submit{
     padding: 10px 30px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 17px;
     margin-bottom: 80px;
 }
 #submit{
